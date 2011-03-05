@@ -17,17 +17,17 @@ $(document).ready(function(){
 		return false;
 	});
 	
-		$('#rules-expand').click( function(){
-			if( document.getElementById( 'official-rules' ).offsetHeight > 0 ) {
-				$( '#rule-link .more-less' ).html( '[+]' );
-				$( '#official-rules' ).slideToggle( 'slow' );
-			}
-			else{
-				$( '#rule-link .more-less' ).html('[-]');
-				$( '#official-rules' ).slideToggle( 'slow' );
-			}
-			return false;
-		});
+	$('#rules-expand').click( function(){
+		if( document.getElementById( 'official-rules' ).offsetHeight > 0 ) {
+			$( '#rule-link .more-less' ).html( '[+]' );
+			$( '#official-rules' ).slideToggle( 'slow' );
+		}
+		else{
+			$( '#rule-link .more-less' ).html('[-]');
+			$( '#official-rules' ).slideToggle( 'slow' );
+		}
+		return false;
+	});
 });
 
 
