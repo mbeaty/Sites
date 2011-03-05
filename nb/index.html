@@ -59,6 +59,7 @@
                         <li>After tournament teams are announced on March 14th, come back to this site to make your tournament team picks</li>
                         <li>Picks must be submitted by the start of the first tournament game on March 18th</li>
                         <li>Come back to this site after the tournament starts to track your picks and overall pool standings</li>
+                        <li>Please <a href="mailto:support@netbrackets.com">Contact Us</a> if you have any problems or questions</li>                        
                     </ul>
                     <div id="rule-link"><a href="http://netbrackets.com/rules">OFFICIAL RULES</a></div>
                 </div>
@@ -159,7 +160,8 @@
                                 <input type="text" name="zip" value=""  />		
 
                             </fieldset>
-                            <a href="#" class="button blue create-btn">CREATE FREE ACCOUNT</a>
+                            <input id="DefCreateButton" style="display: none" type="submit">
+                            <a href="#" id="create-btn" class="button blue">CREATE FREE ACCOUNT</a>
                         </form>
                     </div>
                     <div class="rfloat">
@@ -181,6 +183,7 @@
 
                                 </fieldset>
                                 <div class="btn-wrapper">
+                                <input id="DefSigninButton" style="display: none" type="submit">
                                 <a href="#" id="signin-btn" class="button blue">SIGN-IN NOW</a>
                                 </div>        
                         </form>
@@ -203,7 +206,7 @@
 
   <!-- scripts concatenated and minified via ant build script-->
   <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.js?v=4"></script>
   <!-- end scripts-->
 
 

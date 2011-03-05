@@ -1,5 +1,5 @@
 /**
- * HTML5 ✰ Boilerplate
+ * HTML5 Boilerplate
  *
  * style.css contains a reset, font normalization and some base styles.
  *
@@ -284,6 +284,7 @@ body
 	width: 100%;		    
 	margin: 18px auto 0px;
 	position: relative;
+	cursor: pointer;
 }
 
 #main {
@@ -444,164 +445,164 @@ body
 	color: #256093;
 }
 	
-	/* Form styling */
-	form  {
-		overflow: hidden;
-	}
-	
-	.form-hdr {
-		font-family: "AardvarkBoldRegular", Tahoma, sans-serif;
-		font-size: 1.8em;
-		color: #222;		
-	}
+/* Form styling */
+form  {
+	overflow: hidden;
+}
 
-	#create-form {
-		margin-top: 10px;
-		width: 360px;
-		padding: 10px 0px 0px 0px;
-	}
-	#signin-form {
-		margin-top: 8px;
-		width: 260px;
-		/*margin-right: 15px;*/
-		padding: 10px 5px 10px 10px;
-		overflow: hidden;
-		/*width: 240px*/
-		border: 1px solid #A8DEFF;
-		background-color: #E5F5FF;
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px; 
-		border-radius: 10px;
-	}
-	
-	.form-label {
-		font: 1em Tahoma;
-		letter-spacing: 0.1em;
-		display: block;
-	    color: #444;
-	}
+.form-hdr {
+	font-family: "AardvarkBoldRegular", Tahoma, sans-serif;
+	font-size: 1.8em;
+	color: #222;		
+}
 
-	#create-form fieldset { 
-		border: none; 
-	}
+#create-form {
+	margin-top: 10px;
+	width: 360px;
+	padding: 10px 0px 0px 0px;
+}
+#signin-form {
+	margin-top: 8px;
+	width: 260px;
+	/*margin-right: 15px;*/
+	padding: 10px 5px 10px 10px;
+	overflow: hidden;
+	/*width: 240px*/
+	border: 1px solid #A8DEFF;
+	background-color: #E5F5FF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px; 
+	border-radius: 10px;
+}
 
-	#user-details-1 { 
-	    float: left;
-		margin-right: 25px;
-	}
-	#user-signin-1 { 
-	    float: left;
-		margin-right: 20px;
-	}
+.form-label {
+	font: 1em Tahoma;
+	letter-spacing: 0.1em;
+	display: block;
+	color: #444;
+}
 
-	#user-details-2 { 
-	    float: left;
-	}
-	#user-signin-2 { 
-	    float: left;
-	}
-	#tourney-img {
-		display: block;
-		margin: 5px 0px 0px 30px;
-		width: 227px;
-		height: 215px;
-		position: relative; /* fixes IE6 disappearing images problem */
-	}
-	
+#create-form fieldset { 
+	border: none; 
+}
 
-	.btn-wrapper {
-		margin-top: 25px;
-	}
-	
-	input, select { 
-		border: 1px #DDD solid;
-	    
-		/* -- CSS3 - add a drop shadow -- */
-		-webkit-box-shadow:0px 0 4px #94CDFF;
-		-moz-box-shadow:0px 0 8px #94CDFF; 
-		box-shadow:0px 0 8px #94CDFF;
-		
-		-webkit-border-radius: 6px;
-		-moz-border-radius: 6px; 
-		border-radius: 6px;
-				
-		font-size: 1em Tahoma;
-	    padding: 2px; 
-	    margin: 2px 0 15px 0; 
-	    background: #fff; 
-	    width: 160px; 
-	    color: #555;
-	}
-	
-	#signin-form input {
-		width: 110px;
-	}
+#user-details-1 { 
+	float: left;
+	margin-right: 25px;
+}
+#user-signin-1 { 
+	float: left;
+	margin-right: 20px;
+}
 
-	/* button 
-	---------------------------------------------- */
-	.button {
-	    display: inline-block;
-	    zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
-	    *display: inline;
-	    vertical-align: baseline;
-	    outline: none;
-	    cursor: pointer;
-	    text-align: center;
-	    text-decoration: none;
-	    font: 14px/100% 'AardvarkBoldRegular', Arial, Helvetica, sans-serif;
-	    padding: .5em 4em .55em;
-	    text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	    -webkit-border-radius: .5em; 
-	    -moz-border-radius: .5em;
-	    border-radius: .5em;
-	    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	    box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	}
-	.button:hover {
-	    text-decoration: none;
-	}
-	.button:active {
-	    position: relative;
-	    top: 1px;
-	}
-	
-	.create-btn {
-		margin: 10px 0px 0px;
-		font-size: 14px/100%;
-		padding: .5em 6em .55em;
-	}
-	#signin-btn {
-		margin: 0px 0px 0px;
-		font-size: 14px/100%;
-		padding: .5em 5.5em .55em;
-	}
-
-	/* color styles 
-	---------------------------------------------- */
+#user-details-2 { 
+	float: left;
+}
+#user-signin-2 { 
+	float: left;
+}
+#tourney-img {
+	display: block;
+	margin: 5px 0px 0px 30px;
+	width: 227px;
+	height: 215px;
+	position: relative; /* fixes IE6 disappearing images problem */
+}
 
 
-	/* blue */
-	.blue {
-	    color: white !important;
-	    border: solid 1px #0076a3;
-	    background: #0095cd;
-	    background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
-	    background: -moz-linear-gradient(top,  #00adee,  #0078a5);
-	    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
-	}
-	.blue:hover {
-	    background: #007ead;
-	    background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
-	    background: -moz-linear-gradient(top,  #0095cc,  #00678e);
-	    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
-	}
-	.blue:active {
-	    color: #80bed6;
-	    background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
-	    background: -moz-linear-gradient(top,  #0078a5,  #00adee);
-	    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
-	}
+.btn-wrapper {
+	margin-top: 25px;
+}
+
+input, select { 
+	border: 1px #DDD solid;
+	/* -- CSS3 - add a drop shadow -- */
+	-webkit-box-shadow:0px 0 4px #94CDFF;
+	-moz-box-shadow:0px 0 8px #94CDFF; 
+	box-shadow:0px 0 8px #94CDFF;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px; 
+	border-radius: 6px;		
+	font-size: 1em Tahoma;
+	padding: 2px; 
+	margin: 2px 0 15px 0; 
+	background: #fff; 
+	width: 160px; 
+	color: #555;
+}
+
+#signin-form input {
+	width: 110px;
+}
+select {
+	font-size: 1.1em;
+}
+
+/* button 
+---------------------------------------------- */
+.button {
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	vertical-align: baseline;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% 'AardvarkBoldRegular', Arial, Helvetica, sans-serif;
+	padding: .5em 4em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+#create-btn {
+	margin: 10px 0px 0px;
+	font-size: 14px/100%;
+	padding: .5em 6em .55em;
+}
+#signin-btn {
+	margin: 0px 0px 0px;
+	font-size: 14px/100%;
+	padding: .5em 5.5em .55em;
+}
+
+/* color styles 
+---------------------------------------------- */
+
+
+/* blue */
+.blue {
+	color: white !important;
+	border: solid 1px #0076a3;
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+}
+.blue:hover {
+	background: #007ead;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+	background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
+}
+.blue:active {
+	color: #80bed6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
+	background: -moz-linear-gradient(top,  #0078a5,  #00adee);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
+}
 	
 /**
  * Non-semantic helper classes: please define your styles before this section.
