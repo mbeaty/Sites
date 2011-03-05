@@ -6,33 +6,18 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-       Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>[title goes here]</title>
+  <title>IWON Basketball Pool</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
- -->
-
-  <!-- CSS: implied media="all" -->
   <link rel="stylesheet" href="css/style.css?v=2">
-   
-  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
-  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
 
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/libs/modernizr-1.7.min.js"></script>
-  
-
 </head>
 
 <body lang="en">
@@ -53,7 +38,7 @@
                     <div class="rule-hdr">
                         Here's How It Works...
                     </div>
-                    <ul id="rule-list">
+                    <ul class="rule-list">
                         <li>Create your entry into the IWON.com Basketball Pool</li>
                         <li>Bookmark this website: <a href="http://www.iwonmadness.com/">http://www.iwonmadness.com/</a></li>
                         <li>After tournament teams are announced on March 14th, come back to this site to make your tournament team picks</li>
@@ -61,7 +46,25 @@
                         <li>Come back to this site after the tournament starts to track your picks and overall pool standings</li>
                         <li>Please <a href="mailto:support@netbrackets.com">Contact Us</a> if you have any problems or questions</li>                        
                     </ul>
-                    <div id="rule-link"><a href="http://netbrackets.com/rules">OFFICIAL RULES</a></div>
+                    <div id="rule-link"><span class="more-less">[+]</span>&nbsp;<a href="#" id="rules-expand"> OFFICIAL RULES</a></div>
+                    <div id="official-rules" style="display: none">
+                        <ul id="rules-more" class="rule-list">
+                            <li><b>Please do not use company name in entry name</b></li>
+                            <li>Please answer all questions in registration form below</li>
+                            <li>Scoring will be based on a point system:</li>
+                            <ul>
+                                <li>Round 1 = 5 points</li>
+                                <li>Round 2 = 10 points</li>
+                                <li>Round 3 = 15 points</li>
+                                <li>Round 4 = 20 points</li>
+                                <li>Round 5 = 25 points</li>
+                                <li>Round 6 = 30 points</li>
+                            </ul>
+                            <li>First tie breaker of total points won will be closest guess of total points scored in championship game</li>
+                            <li>Second tie breaker will be determined by random drawing</li>
+                            <li>One entry per person please, duplicate entries will be disqualified</li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="bottom-content">
                     <div class="lfloat">
@@ -183,8 +186,8 @@
 
                                 </fieldset>
                                 <div class="btn-wrapper">
-                                <input id="DefSigninButton" style="display: none" type="submit">
-                                <a href="#" id="signin-btn" class="button blue">SIGN-IN NOW</a>
+                                    <input id="DefSigninButton" style="display: none" type="submit">
+                                    <a href="#" id="signin-btn" class="button blue">SIGN-IN NOW</a>
                                 </div>        
                         </form>
                         <img id="tourney-img" src="images/finalfour.png">
@@ -196,33 +199,20 @@
         </footer>
     </div> <!--! end of #container -->
 
-
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.js"%3E%3C/script%3E'))</script>
 
-
-  <!-- scripts concatenated and minified via ant build script-->
   <script src="js/plugins.js"></script>
   <script src="js/script.js?v=4"></script>
   <!-- end scripts-->
-
 
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>
     <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
   <![endif]-->
 
-
-  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
- -->
 </body>
 </html>

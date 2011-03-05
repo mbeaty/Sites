@@ -190,29 +190,6 @@ a:hover { color: #036; }
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'AardvarkBold';
-    src: url('aardvark_bold-webfont.eot');
-    src: url('aardvark_bold-webfont.eot?iefix') format('eot'),
-         url('aardvark_bold-webfont.woff') format('woff'),
-         url('aardvark_bold-webfont.ttf') format('truetype'),
-         url('aardvark_bold-webfont.svg#webfontO6wmhcJe') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'BevanRegular';
-    src: url('bevan-webfont.eot');
-    src: url('bevan-webfont.eot?iefix') format('eot'),
-         url('bevan-webfont.woff') format('woff'),
-         url('bevan-webfont.ttf') format('truetype'),
-         url('bevan-webfont.svg#webfontLJgsFgwI') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 .rfloat {
 	float: right;		
 }
@@ -258,7 +235,6 @@ body
 }
 
 #container {
-	/*height: 880px;*/
 	position: relative;
 	margin: 18px auto 18px;
 	width: 750px;
@@ -276,7 +252,6 @@ body
 		
 #hdr-primary {
 	background: #FFF url(../images/header.png) no-repeat 0 0;
-	/*border: 1px solid #999;*/
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -291,19 +266,15 @@ body
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	
 	background-color: #FFF;
 	border: 1px solid #2D9EC8;
-	/*height: 880px;*/
 	margin: 10px auto 18px;
 	position: relative;
 	width: 100%;
 	overflow: hidden; /* ie6 */
 }
 
-/* IE ? Not sure display:table-cell works in IEx */
 #hdr-secondary {
-	/*display: table-cell;*/
 	vertical-align: middle;
 	background: #FFF url(../images/top2.png) no-repeat 0 0;
 	width: 100%;
@@ -311,7 +282,6 @@ body
 	text-align: center;
 }
 
-/* IE ? Check this out for IE <=7 text shadow */
 #hdr-line1 {
 	padding-top: 1em;
 	font-family: 'AardvarkBoldRegular', Tahoma, sans-serif;
@@ -385,20 +355,18 @@ body
 	margin: 0 0 10px 10px;
 }
 
-#rule-list {
+.rule-list {
 	font: bold 11px Tahoma;
 	color: #3D6C9B;
-	list-style-type: none;
 	padding: 0px;
 	margin-left: 10px;
 }
-#rule-list li {
+.rule-list li {
+	list-style-type: none;
 	background-image: url(../images/bullet.gif);
 	background-repeat: no-repeat;
 	background-position: 0 0.4em;
-	/*padding: 2px 0 2px 15px;*/
 	padding: 0em 0em 0.7em 0.8em;
-	/*margin: .4em 0;*/
 }
 #rule-link {
 	font: bold 11px Tahoma;
@@ -406,46 +374,34 @@ body
 	padding: 0px;
 	margin-left: 12px;	
 }
-/*
-#rule-list li:last-child {
-	background: none;
-	padding-left: 0;
+#official-rules {
+	padding-top: 3px;
 }
-.last_child {
-	background-image: none;
-	background: none;
-	padding-left: 0;
+.more-less {
+	font: bold 11px Monaco !important;
 }
-*/
+
 #bottom-content {
 	overflow: hidden;
 	margin: 10px 12px 12px;
 	height: 100%;
 	padding: 15px;
-	
 	background-color: #FBFBFB;
 	border: 1px solid #CCC;
-	
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px; 
 	border-radius: 10px;
-
-	/* -- CSS3 - create a background gradient -- */
 	background: -webkit-gradient(linear, 0% 0%, 0% 40%, from(#EEE), to(#FFF)); 
 	background: -moz-linear-gradient(0% 40% 90deg,#FFF, #EEE); 
-
-	/* -- CSS3 - add a drop shadow -- */
 	-webkit-box-shadow:0px 0 10px #ccc;
 	-moz-box-shadow:0px 0 10px #ccc; 
 	box-shadow:0px 0 10px #ccc;
- 
 }
 
 .hilite {
 	color: #256093;
 }
 	
-/* Form styling */
 form  {
 	overflow: hidden;
 }
@@ -464,10 +420,8 @@ form  {
 #signin-form {
 	margin-top: 8px;
 	width: 260px;
-	/*margin-right: 15px;*/
 	padding: 10px 5px 10px 10px;
 	overflow: hidden;
-	/*width: 240px*/
 	border: 1px solid #A8DEFF;
 	background-color: #E5F5FF;
 	-webkit-border-radius: 10px;
@@ -509,14 +463,12 @@ form  {
 	position: relative; /* fixes IE6 disappearing images problem */
 }
 
-
 .btn-wrapper {
 	margin-top: 25px;
 }
 
 input, select { 
 	border: 1px #DDD solid;
-	/* -- CSS3 - add a drop shadow -- */
 	-webkit-box-shadow:0px 0 4px #94CDFF;
 	-moz-box-shadow:0px 0 8px #94CDFF; 
 	box-shadow:0px 0 8px #94CDFF;
@@ -538,8 +490,6 @@ select {
 	font-size: 1.1em;
 }
 
-/* button 
----------------------------------------------- */
 .button {
 	display: inline-block;
 	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
@@ -559,6 +509,7 @@ select {
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
 	box-shadow: 0 1px 2px rgba(0,0,0,.2);
 }
+
 .button:hover {
 	text-decoration: none;
 }
@@ -578,11 +529,6 @@ select {
 	padding: .5em 5.5em .55em;
 }
 
-/* color styles 
----------------------------------------------- */
-
-
-/* blue */
 .blue {
 	color: white !important;
 	border: solid 1px #0076a3;
