@@ -34,6 +34,10 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
 	line-height: 1;
 	font-size: 62.5%; /* 1em = 10px , nice hack if you want to express font-size in em */
@@ -216,7 +220,8 @@ a:hover { color: #036; }
 	float: left;		
 }
 
-html
+
+body
 {
 	background-color: #A1E0FD;
 	background-image: url(../images/sky-bg.png);
@@ -228,9 +233,28 @@ html
 	-webkit-background-size: 100% 100%, auto;
 	/*background-size: 100% 100%, auto;*/
 	/*background:white url(texture1.bg.jpg) fixed;*/
-	overflow: auto;
 	padding: 0;
 	margin: 0;
+}
+
+.ie6 body {
+	background-image: none;
+}
+
+#ie-background {
+	display: none;
+	position:fixed; 
+	top:0; 
+	left:0; 
+	width:100%; 
+	height:100%;
+}
+
+.ie7 #ie-background {
+	display: inline;
+}
+.ie8 #ie-background {
+	display: inline;
 }
 
 #container {
@@ -244,6 +268,9 @@ html
 	margin: 0px auto 0px;
 }
 .ie7 #container {
+	margin: 0px auto 0px;
+}
+.ie8 #container {
 	margin: 0px auto 0px;
 }
 		
@@ -341,6 +368,7 @@ html
 	height: 250px;
 	margin-left: 90px;
 	margin-right: 8px;
+	position: relative; /* fixes IE6 disappearing images problem */
 }
 
 .rule-hdr {
@@ -459,6 +487,7 @@ html
 		margin: 5px 0px 0px 30px;
 		width: 227px;
 		height: 215px;
+		position: relative; /* fixes IE6 disappearing images problem */
 	}
 	
 
