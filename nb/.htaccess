@@ -90,10 +90,10 @@ AddEncoding gzip                       svgz
 # webfonts                             
 AddType application/vnd.ms-fontobject  eot
 AddType font/truetype                  ttf
-AddType font/ttf                       ttf
+#AddType font/ttf                       ttf
 AddType font/opentype                  otf
 AddType application/x-font-woff        woff
-AddType application/x-font             woff
+#AddType application/x-font             woff
 
 # assorted types                                      
 AddType image/x-icon                   ico

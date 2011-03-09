@@ -181,7 +181,6 @@ a:hover { color: #036; }
 /* font-face code enerated by Font Squirrel (http://www.fontsquirrel.com) */
 @font-face {
     font-family: 'AardvarkBoldRegular';
-    src: url('aardv-webfont.eot');
     src: url('aardv-webfont.eot?iefix') format('eot'),
          url('aardv-webfont.woff') format('woff'),
          url('aardv-webfont.ttf') format('truetype'),
